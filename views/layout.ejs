@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <%- include('partials/navbar') %> <!-- Include the Navbar Partial Here -->
+    <%- defineContent("styles-area") %> <!-- You can override this section if needed -->
+</head>
+<body>
+    <%- body %> <!-- Main content section where content will be injected -->
+    
+    <%- include('partials/footer') %> <!-- Include the Footer Partial Here -->
+    <%- defineContent("footer-area") %> <!-- This section can be overridden if needed -->
+</body>
+</html>
